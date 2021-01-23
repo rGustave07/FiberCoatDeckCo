@@ -1,0 +1,4 @@
+# Ignore git
+.git
+*.md
+.eslintcache
