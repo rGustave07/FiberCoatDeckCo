@@ -1,0 +1,10 @@
+.spaceApart {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.verticalAlignmentCenter {
+    align-items: center;
+}
