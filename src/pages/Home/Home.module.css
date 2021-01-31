@@ -6,3 +6,12 @@
 
     height: 100%;
 }
+
+.metaInfo {
+    margin: 0 0 50px 0;
+    font-family: 'Manjari';
+}
+
+.styledTitle {
+    font-family: Mistral;
+}

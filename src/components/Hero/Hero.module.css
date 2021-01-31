@@ -1,0 +1,21 @@
+.heroContainer {
+    grid-column: 1 / span 3;
+}
+
+.heroImage {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+    , url('../../static-assets/img/ariel-tutillo-vTOdjEdO9qE-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    height: 100%;
+}
+
+.heroContent {
+    position: relative;
+    top: 65px;
+    padding: 2em;
+}
