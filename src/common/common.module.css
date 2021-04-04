@@ -8,3 +8,7 @@
 .verticalAlignmentCenter {
     align-items: center;
 }
+
+.fullHeightContainer {
+    height: 100vh;
+}

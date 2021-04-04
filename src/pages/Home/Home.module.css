@@ -15,3 +15,62 @@
 .styledTitle {
     font-family: Mistral;
 }
+
+.awardsContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.award {
+    height: 75px;
+    margin: 0 10px;
+}
+
+.bottomContainer {
+    grid-column: 1 / span 3;
+    padding: 10px 0;
+}
+
+.placement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    gap: 10px;
+
+    padding: 0 20px;
+}
+
+.cardTitleSeparator {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .styledTitle {
+        font-size: 22px !important;
+    }
+
+    .metaInfo {
+        margin: 0;
+        margin: 10px 0;
+    }
+
+    .placement {
+        flex-direction: column;
+    }
+
+    .mainText {
+        font-size: 1.5rem;
+    }
+
+    .awardsContainer {
+        margin-top: 25px;
+    }
+
+    .award {
+        height: 50px;
+    }
+}

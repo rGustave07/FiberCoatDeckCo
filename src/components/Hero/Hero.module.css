@@ -1,5 +1,6 @@
 .heroContainer {
     grid-column: 1 / span 3;
+    overflow: hidden;
 }
 
 .heroImage {
@@ -18,4 +19,10 @@
     position: relative;
     top: 65px;
     padding: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    .heroContent {
+        top: 30px;
+    }
 }

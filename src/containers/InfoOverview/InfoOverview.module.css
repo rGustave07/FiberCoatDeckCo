@@ -1,0 +1,7 @@
+.containerGridFullWidth {
+    grid-column: 1 / span 3;
+}
+
+.gridMaxHeight {
+    height: 100%;
+}

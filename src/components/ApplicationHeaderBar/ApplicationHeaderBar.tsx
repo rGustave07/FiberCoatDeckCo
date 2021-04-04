@@ -10,6 +10,7 @@ import {
 } from '@material-ui/core'
 
 import commonStyles from '../../common/common.module.css';
+import styles from './ApplicationHeaderBar.module.css';
 
 const ApplicationHeaderBar = (): JSX.Element => {
     return (
@@ -19,7 +20,12 @@ const ApplicationHeaderBar = (): JSX.Element => {
                     <MenuIcon />
                 </IconButton>
                 <div className={`${commonStyles.spaceApart} ${commonStyles.verticalAlignmentCenter}`}>
-                    <Typography variant="h6">
+                    <Typography
+                        classes={{
+                            root: styles.companyName
+                        }}
+                        variant="h6"
+                    >
                         Fiber-Coat Deck Company
                     </Typography>
                     <Button color="inherit">
