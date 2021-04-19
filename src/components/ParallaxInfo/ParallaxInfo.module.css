@@ -7,4 +7,42 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    box-sizing: border-box;
+}
+
+.fourGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    height: 100%;
+}
+
+.horizontalFlex {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+.verticalFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.containment {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 730px) {
+    .fourGrid {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+    }   
 }
