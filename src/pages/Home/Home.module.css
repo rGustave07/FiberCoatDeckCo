@@ -15,3 +15,125 @@
 .styledTitle {
     font-family: Mistral;
 }
+
+.floatingBox {
+    padding: 1rem;
+    max-width: 300px;
+    max-height: 300px;
+
+    margin: 30px;
+    place-self: center;
+}
+
+.readMoreBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.topLeft {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.topRight {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.longWidthFloatingBox {
+    flex: 1;
+    height: 100%;
+
+    padding: 10px;
+    place-self: flex-end;
+}
+
+.bottomInfoContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoBox {
+    width: 300px;
+    margin: 10px;
+
+    max-height: 200px;
+}
+
+.awardsContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.award {
+    height: 75px;
+    margin: 0 10px;
+}
+
+.bottomContainer {
+    grid-column: 1 / span 3;
+    padding: 10px 0;
+}
+
+.bottom {
+    grid-column: 1 / span 3;
+    padding: 10px 0;
+    margin: 100px;
+}
+
+.placement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    gap: 10px;
+
+    padding: 0 20px;
+}
+
+.cardTitleSeparator {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 730px) {
+    .bottom {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .styledTitle {
+        font-size: 22px !important;
+    }
+
+    .metaInfo {
+        margin: 0;
+        margin: 10px 0;
+    }
+
+    .placement {
+        flex-direction: column;
+    }
+
+    .mainText {
+        font-size: 1.5rem;
+    }
+
+    .awardsContainer {
+        margin-top: 25px;
+    }
+
+    .award {
+        height: 50px;
+    }
+}

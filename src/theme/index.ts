@@ -21,6 +21,11 @@ const fcdcTheme = createMuiTheme({
         },
         text: {
             primary: '#F3E8EE',
+            secondary: '#2e2c2f',
+        },
+        background: {
+            default: "#f3e8ee",
+            paper: "#475b63",
         }
     }
 })
