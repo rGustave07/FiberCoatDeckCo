@@ -1,0 +1,13 @@
+
+.topLevelLayout {
+    padding-top: 64px;
+    
+    box-sizing: border-box;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .topLevelLayout {
+        padding-top: 56px;
+    }
+}

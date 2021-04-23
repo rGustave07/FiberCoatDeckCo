@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.fontTitle {
+    font-size: 2em;
+}
+
 .verticalAlignmentCenter {
     align-items: center;
 }
