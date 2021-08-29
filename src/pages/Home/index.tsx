@@ -10,6 +10,7 @@ import award1 from '../../static-assets/award-imgs/angieaward2018.jpeg';
 import award2 from '../../static-assets/award-imgs/angieaward2019.jpeg';
 import deckImage from '../../static-assets/img/deckimg.jpg';
 
+import { useMediaQuery } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import SpeedIcon from '@material-ui/icons/Speed';
@@ -41,21 +42,7 @@ const useStyles = makeStyles({
 
 const Home = (props: Props): JSX.Element => {
     const classes = useStyles();
-    let screenWidthMobile = window.matchMedia("(max-width: 600px)")
-
-    const [screenInMobileRange, setScreenInMobileRange] = React.useState(screenWidthMobile.matches);
-
-    React.useEffect(() => {
-        window.addEventListener("resize", () => {
-            setScreenInMobileRange(window.innerWidth < 600)
-        })
-
-        return () => {
-            window.removeEventListener("resize", () => {
-            setScreenInMobileRange(window.innerWidth < 600)
-        });
-        }
-    }, [])
+    const screenInMobileRange = useMediaQuery("(max-width: 600px)");
 
     return (
         <ThemeProvider theme={fcdcTheme}>
