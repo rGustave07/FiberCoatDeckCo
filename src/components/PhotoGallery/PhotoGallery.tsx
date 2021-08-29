@@ -28,17 +28,12 @@ const Photogallery = () => {
                 </div>
             </section>
             <section className={styles.photosContainer}>
-                <ImageGallery items={images} />
-                {/* <ImageList rowHeight={160} className={classes.imageList} cols={3}>
-                    {images.map(( image, idx ) => (
-                        <ImageListItem key={idx} cols={1}>
-                            <img src={image} alt="" />
-                        </ImageListItem>
-                    ))}
-                </ImageList> */}
-                {/* {images.map(image => (
-                    <img src={image} alt="" className={styles.imgSizedDown}/>
-                ))} */}
+                <span className={styles.galleryContainer}>
+                    <ImageGallery
+                        items={images}
+                        lazyLoad
+                    />
+                </span>
             </section>
         </TopLevelContainer>
     )
