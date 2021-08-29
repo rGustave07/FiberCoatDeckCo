@@ -5,3 +5,16 @@
 
     margin-top: 3em;
 }
+
+.photosContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    max-height: 600px;
+}
+
+.imgSizedDown {
+    width: 100px;
+    height: 100px;
+}
